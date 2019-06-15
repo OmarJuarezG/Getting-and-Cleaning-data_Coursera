@@ -1,0 +1,16 @@
+1. Merges the training and test sets to create just one data set. All of this files are in txt format.
+
+2. Reads the features.txt file and extracts only two mesaures: mean and std giving a data frame with dimension 10229x66.
+
+3. Reads the activity_labels.txt file and transform the variables to make them more easy to work with by removing "_" or capital 
+    letters.
+
+  3.1 The new names of the activities are like these:
+      walking, wlakingupstairs,walkingdownstairs, and so on.
+
+4. It also merges the the data set created in point (1) and the activity labels and the subject ID, and the result is saved in the current 
+  working directory as a text file using the write.table command.
+
+5. Just like point (4) the script creates a new data set with the average of each variable (for each activity and subject). This data set 
+is also saved as "data_average.txt" in the current working directory. This data set has 180 rows since there are 30 subjects and 6 
+activities.
